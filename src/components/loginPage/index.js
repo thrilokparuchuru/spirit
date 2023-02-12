@@ -97,6 +97,8 @@ class LoginPage extends Component {
             Login
           </button>
           {error && <p className="error-message">* Invalid Credentials </p>}
+          <p className="pwd">UN:"master", pwd:"master123" </p>
+          <p className="pwd"> UN:"student", pwd:"student123"</p>
         </form>
         <div className="img-div">
           <h2 className="selected-option">You are {user}</h2>
