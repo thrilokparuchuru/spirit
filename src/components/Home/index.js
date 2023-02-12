@@ -73,18 +73,16 @@ class Home extends Component {
   onData = () => {
     const {number1, calculation, number2} = this.state
 
-    const data = {
-      number1,
-      calculation,
-      number2,
-      time: new Date(),
-    }
-    logData.push(data)
-    localStorage.setItem('activity', JSON.stringify(logData))
-
     const result = numberFunctions1[number1](
       calculation1[calculation](numberFunctions[number2]()),
     )
+    const data = {
+      result,
+      time: new Date(),
+    }
+    logData.unshift(data)
+    localStorage.setItem('activity', JSON.stringify(logData))
+
     this.setState({result: math.evaluate(result).toFixed(1)})
   }
 

@@ -31,7 +31,9 @@ class Header extends Component {
           <Link to="/log" className="links">
             <FiActivity className="log" />
           </Link>
-          <FiLogOut onClick={this.clearCookies} />
+          <div className="logout">
+            <FiLogOut onClick={this.clearCookies} />
+          </div>
         </div>
       </nav>
     )

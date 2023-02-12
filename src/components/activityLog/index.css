@@ -3,4 +3,55 @@
   background-color: #0d0c1f;
   border: 10px solid white;
   padding: 10px;
+  color: #d4901c;
+}
+
+.head {
+  text-align: center;
+  color: white;
+
+  font-size: 25px;
+}
+
+.headings {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0d0c1f;
+  border-radius: 10px;
+  width: 95%;
+  margin: auto;
+}
+
+.headings > p {
+  margin: 0px;
+  line-height: 2;
+}
+
+.log-list {
+  max-height: 70vh;
+  background-color: #d4901c;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  color: white;
+  padding: 10px;
+  overflow: auto;
+  text-align: center;
+}
+
+.li-item {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  line-height: 0.5;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
 }
