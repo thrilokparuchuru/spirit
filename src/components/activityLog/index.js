@@ -26,7 +26,7 @@ const ActivityLog = () => {
             })
 
             return (
-              <div className="li-item">
+              <div className="li-item" key={time}>
                 <p>{date}</p>
                 <p>{time}</p>
                 <p>{each.result}</p>
